@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha festa de aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">
+                Happy birthday to me! <br> Partiu comemorar meus 32 anos em grande estilo! <br><br> A festa começa em: <br> <span id="contador"></span>
+            </p>
+            <div class="infos-festa" data-aos="fade-left">
+                <ul class="infos-festa__infos">
+                    <li class="infos-festa__infos__item">
+                        <b>Local</b>
+                        Minha casa. <br> <br> Todos vocês sabem onde eu moro, certo?
+                    </li>
+                    <li class="infos-festa__infos__item">
+                        <b>Data</b>
+                        Sábado, 27/04
+                    </li>
+                    <li class="infos-festa__infos__item">
+                        <b>Horário</b>
+                        18:00
+                    </li>
+                    <input class="infos-festa__infos__item" type="text" placeholder="Digite seu nome">
+                    <a href="#" class="button button--primary">
+                        Confirmar presença
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="evento evento--ambiente">
+        <div class="container" data-aos="fade-up">
+            <div class="evento__details">
+                <h2 class="evento__details__title">Ambiente confortável</h2>
+                <p class="evento__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum amet, possimus itaque placeat deleniti doloribus hic esse, facere rerum corporis provident soluta nemo modi iure impedit laborum commodi rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus autem optio, quasi amet earum, quas ut, veniam assumenda consequuntur deleniti beatae laudantium. Fugit, eos voluptatibus laboriosam eligendi magnam inventore nostrum.
+                </p>
+            </div>
+            <img class="evento__image" src="./images/casa.jpg" alt="Casa">
+        </div>
+    </section>
+    <section class="evento evento--comida evento--image-left">
+        <div class="container" data-aos="fade-up">
+            <div class="evento__details">
+                <h2 class="evento__details__title">Churrasco</h2>
+                <p class="evento__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum amet, possimus itaque placeat deleniti doloribus hic esse, facere rerum corporis provident soluta nemo modi iure impedit laborum commodi rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus autem optio, quasi amet earum, quas ut, veniam assumenda consequuntur deleniti beatae laudantium. Fugit, eos voluptatibus laboriosam eligendi magnam inventore nostrum.
+                </p>
+            </div>
+            <img class="evento__image" src="./images/churrasco.jpg" alt="Churrasco">
+        </div>
+    </section>
+    <section class="evento evento--musica">
+        <div class="container" data-aos="fade-up">
+            <div class="evento__details">
+                <h2 class="evento__details__title">Banda de Rock ao vivo</h2>
+                <p class="evento__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum amet, possimus itaque placeat deleniti doloribus hic esse, facere rerum corporis provident soluta nemo modi iure impedit laborum commodi rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus autem optio, quasi amet earum, quas ut, veniam assumenda consequuntur deleniti beatae laudantium. Fugit, eos voluptatibus laboriosam eligendi magnam inventore nostrum.
+                </p>
+            </div>
+            <img class="evento__image" src="./images/rockaovivio.jpg" alt="Banda de Rock">
+        </div>
+    </section>
+    <section class="evento evento--lembranca evento--image-left">
+        <div class="container" data-aos="fade-up">
+            <div class="evento__details">
+                <h2 class="evento__details__title">Broche ACDC como lembrança</h2>
+                <p class="evento__details__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum amet, possimus itaque placeat deleniti doloribus hic esse, facere rerum corporis provident soluta nemo modi iure impedit laborum commodi rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus autem optio, quasi amet earum, quas ut, veniam assumenda consequuntur deleniti beatae laudantium. Fugit, eos voluptatibus laboriosam eligendi magnam inventore nostrum.
+                </p>
+            </div>
+            <img class="evento__image" src="./images/broche.jpg" alt="Broche Rock">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

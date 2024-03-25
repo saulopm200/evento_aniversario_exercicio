@@ -1,0 +1,67 @@
+@use 'variables';
+
+.evento {
+    padding: 80px 0px;
+
+    &--ambiente {
+        background-image: linear-gradient(variables.$rosa, variables.$laranja);
+    }
+
+    &--comida {
+        background-image: linear-gradient(variables.$laranja, variables.$amarelo);
+    }
+
+    &--musica {
+        background-image: linear-gradient(variables.$amarelo, variables.$verde);
+    }
+
+    &--lembranca {
+        background-image: linear-gradient(variables.$verde, variables.$azul);
+    }
+
+    &__image {
+        max-width: 460px;
+        height: 360px;
+        border-radius: 6px;
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__details {
+        &__title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 36px;
+        }
+
+        &__description {
+            line-height: 32px;
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            display: block;
+        }
+
+        &__image {
+            height: auto;
+            width: 100%;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 26px;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@use '../variables';
+
+.infos-festa {
+    padding: 24px 24px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    display: block;
+    justify-content: space-between;
+    width: 330px;
+    border-radius: 8px;
+    height: auto;
+
+    &__infos {
+        input {
+            height: 47px;
+            font-size: 16px;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 6px;
+            background-color: transparent;
+            border: 2px solid variables.$rosa;
+            margin-bottom: 24px;
+            padding: 0px 0px 0px 6px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                height: 42px;
+            }
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        &__item {
+            font-size: 20px;
+            color: variables.$text-color;
+            margin-bottom: 24px;
+            border: 2px solid variables.$rosa;
+            border-radius: 6px;
+            padding-bottom: 24px;
+            overflow: hidden;
+            line-height: 22px;
+
+            b {
+                font-size: 28px;
+                display: block;
+                color: variables.$text-color;
+                margin-bottom: 14px;
+                border-bottom: 2px solid variables.$rosa;
+                padding-bottom: 10px;
+                background-color: variables.$secondary-text-color;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+
+        &__infos {
+            display: block;
+            &__item {
+                font-size: 16px;
+                line-height: normal;
+            }
+        }
+
+        b {
+            font-size: 20px;
+        }
+    }
+}
